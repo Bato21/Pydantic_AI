@@ -1,25 +1,29 @@
 from pydantic_ai import Agent
+# 1. Esta importación es CORRECTA
+from pydantic_ai.models.google import GoogleModel 
 
-# 1. Instanciamos el Agente
-#    - Le decimos qué modelo usar (en este caso, gemini-1.5-flash-latest).
-#    - Pydantic-AI buscará automáticamente la variable de entorno GOOGLE_API_KEY.
-#    - 'instructions' es el "System Prompt": define la personalidad o rol del agente.
+# --- ¡Sin clave de API aquí! ---
+
+# 2. Creamos la instancia del modelo SIN el argumento 'api_key'
+#    Esto forzará a Pydantic-AI a buscar la variable de entorno GOOGLE_API_KEY
+gemini_model = GoogleModel(
+    'gemini-pro-latest'
+)
+
+# 3. Instanciamos el Agente (esto no cambia)
 agent = Agent(
-    'gemini:gemini-1.5-flash-latest',
+    gemini_model,
     instructions="Eres un historiador experto. Responde siempre de forma breve y precisa."
 )
 
-# 2. Definimos la pregunta
+# 4. Definimos la pregunta
 prompt = "¿De dónde viene la frase 'hola, mundo' en programación?"
 
 print(f"Pregunta: {prompt}\n")
 
-# 3. Ejecutamos el agente de forma síncrona
-#    - .run_sync() espera a que el LLM complete toda la respuesta.
-#    - 'result' es un objeto que contiene la respuesta y otra metadata.
+# 5. Ejecutamos el agente
 result = agent.run_sync(prompt)
 
-# 4. Imprimimos la respuesta
-#    - La respuesta de texto plano se encuentra en el atributo 'output'.
+# 6. Imprimimos la respuesta
 print("Respuesta del Agente:")
 print(result.output)
