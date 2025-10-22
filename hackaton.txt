@@ -1,0 +1,8 @@
+Reglas de la Hackaton 2025:
+- Cada equipo debe tener entre 3 y 5 miembros.
+- El proyecto debe usar IA Generativa.
+- El patrocinador principal es TechCorp.
+- El primer lugar ganará un premio de $5,000 USD, patrocinado por TechCorp.
+- El segundo lugar ganará $2,000 USD.
+- El "Proyecto Centinela" es el nombre en clave del software que deben construir.
+- La entrega final es el sábado a las 5:00 PM.
