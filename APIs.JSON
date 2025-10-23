@@ -1,0 +1,20 @@
+{
+  "Tavily AI API": "Motor de búsqueda optimizado para agentes de IA (LLMs), ideal para RAG (Generación Aumentada por Recuperación) en tiempo real.",
+  "WolframAlpha API": "Provee acceso a conocimiento computacional y datos estructurados para matemáticas, ciencia, geografía y más.",
+  "OpenWeatherMap API": "Suministra datos meteorológicos actuales, pronósticos y mapas climáticos para cualquier ubicación.",
+  "Stability AI API": "Permite la generación de imágenes y arte visual a partir de prompts de texto (Stable Diffusion).",
+  "Spotify API (Spotipy)": "Permite buscar en la base de datos de Spotify, gestionar playlists y controlar la reproducción de música.",
+  "Trello API": "Proporciona acceso programático para crear y gestionar tableros, listas y tarjetas en Trello.",
+  "Discord API (discord.py)": "Permite construir bots que pueden interactuar (leer y enviar mensajes) dentro de servidores de Discord.",
+  "Telegram API": "Similar a la de Discord, permite construir bots para interactuar con usuarios en chats de Telegram.",
+  "Google Calendar API": "Permite leer, crear y modificar eventos en los calendarios de Google de un usuario.",
+  "Twilio API": "Permite a las aplicaciones enviar y recibir mensajes SMS, WhatsApp, y realizar/gestionar llamadas telefónicas.",
+  "Stripe API": "Permite integrar procesamiento de pagos, facturación y gestión de suscripciones en una aplicación.",
+  "GitHub API": "Provee acceso para leer y modificar repositorios, issues, pull requests y realizar acciones en GitHub.",
+  "Google Sheets API": "Permite leer, escribir y formatear datos en hojas de cálculo de Google Sheets.",
+  "Yelp API": "Ofrece acceso a datos de negocios locales, incluyendo reseñas, calificaciones y fotos.",
+  "NASA APIs": "Conjunto de APIs que proveen acceso a datos e imágenes de la NASA, como la 'Imagen Astronómica del Día' (APOD).",
+  "Slack API": "Permite construir aplicaciones y bots que se integran profundamente con los espacios de trabajo de Slack.",
+  "YouTube Data API": "Permite buscar videos, listas de reproducción y canales, y obtener sus metadatos.",
+  "OpenAI API": "Permite al agente invocar a otros modelos (como GPT-4o) para tareas específicas, como resumir texto o generar código."
+}

@@ -2,12 +2,18 @@ from pydantic_ai import Agent
 # 1. Esta importación es CORRECTA
 from pydantic_ai.models.google import GoogleModel 
 
-# --- ¡Sin clave de API aquí! ---
+# --- 1. IMPORTA LA BIBLIOTECA ---
+from dotenv import load_dotenv
+
+# --- 2. CARGA EL ARCHIVO .env ---
+# Esto lee tu .env y carga la GOOGLE_API_KEY en el entorno
+load_dotenv() 
+
 
 # 2. Creamos la instancia del modelo SIN el argumento 'api_key'
 #    Esto forzará a Pydantic-AI a buscar la variable de entorno GOOGLE_API_KEY
 gemini_model = GoogleModel(
-    'gemini-pro-latest'
+    'gemini-2.5-flash'
 )
 
 # 3. Instanciamos el Agente (esto no cambia)

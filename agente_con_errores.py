@@ -3,9 +3,17 @@ from pydantic_ai import Agent, RunContext, ModelMessage
 from pydantic_ai.models.google import GoogleModel 
 import typing
 
+# --- 1. IMPORTA LA BIBLIOTECA ---
+from dotenv import load_dotenv
+
+# --- 2. CARGA EL ARCHIVO .env ---
+# Esto lee tu .env y carga la GOOGLE_API_KEY en el entorno
+load_dotenv() 
+
+
 # --- Configuración del Modelo ---
 gemini_model = GoogleModel(
-    'gemini-pro-latest'
+    'gemini-2.5-flash'
 )
 
 # --- Creación del Agente ---
